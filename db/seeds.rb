@@ -26,6 +26,7 @@ end
 end
 # créer 10 child comment à partir des child déjà créés
 # mais je crois que ça marche pas
+# vu que les child sont 
 10.times do
   ChildComment.create(
     content: Faker::ChuckNorris.fact,
