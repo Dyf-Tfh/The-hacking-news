@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+plutôt hard
+il y a 2 tables de commentaires
+root qui sont à la racine
+et les childs
+qui eux font référence aux roots

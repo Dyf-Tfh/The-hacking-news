@@ -9,6 +9,7 @@ require 'faker'
 10.times do |index|
   User.create(name: Faker::Name.name)
   Url.create(url: Faker::Internet.url, user_id: index)
+  # Créer les RootComment
   RootComment.create(
     title: Faker::DragonBall.character,
     content: Faker::ChuckNorris.fact,
@@ -16,6 +17,7 @@ require 'faker'
     user_id: User.order("RANDOM()").first.id
   )
 end
+# Créer 5 childcomments avec des id de Rootcomment Random
 5.times do
   ChildComment.create(
     content: Faker::ChuckNorris.fact,
